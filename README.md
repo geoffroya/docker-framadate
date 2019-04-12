@@ -10,10 +10,13 @@ docker run -it -d --name framadate-apache -v "$PWD"/php.ini:/var/www/html/php.in
 # How to build
 
 ## Build the image Framadate PHP Apache
+```bash
 docker build -t framadate-php-apache:<TAG> \
 	--build-arg branch=<TAG> \
 	framadate-php-apache
-
+```
+```bash
 docker build -t framadate-php-apache:latest \
 	--build-arg branch=develop \
 	framadate-php-apache
+```
